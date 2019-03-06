@@ -24,8 +24,8 @@ it will downlaod all the necessary file and open localhost:80 it will open the j
 
 now you have to login use below details for login
 
-JENKINS_USERNAME: Jenkins admin username. Default: user
-JENKINS_PASSWORD: Jenkins admin password. Default: bitnami
+JENKINS_USERNAME: user
+JENKINS_PASSWORD: bitnami
 
 create a job and map with git and run the build.
 
