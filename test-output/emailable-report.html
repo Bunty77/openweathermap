@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">SearchTest</td><td class="numi">16</td><td class="numi">16</td><td class="numi">0</td><td class="numi">0</td><td class="numi">189.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">SearchTest &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="14">com.openweathermap.testcases.HomePageTest</td><td><a href="#m1"><b>Mapsclick</b>  </a></td><td class="numi">1</td><td>1551860649177</td><td class="numi">2542</td></tr><tr class="passedodd"><td><a href="#m2"><b>api</b>  </a></td><td class="numi">1</td><td>1551860661190</td><td class="numi">2929</td></tr><tr class="passedodd"><td><a href="#m3"><b>blog</b>  </a></td><td class="numi">1</td><td>1551860674493</td><td class="numi">6178</td></tr><tr class="passedodd"><td><a href="#m4"><b>guide</b>  </a></td><td class="numi">1</td><td>1551860688227</td><td class="numi">2520</td></tr><tr class="passedodd"><td><a href="#m5"><b>homepageTitleTest</b>  </a></td><td class="numi">1</td><td>1551860699444</td><td class="numi">14</td></tr><tr class="passedodd"><td><a href="#m6"><b>homepagelogoTest</b>  </a></td><td class="numi">1</td><td>1551860707114</td><td class="numi">34</td></tr><tr class="passedodd"><td><a href="#m7"><b>partners</b>  </a></td><td class="numi">1</td><td>1551860714801</td><td class="numi">2875</td></tr><tr class="passedodd"><td><a href="#m8"><b>price</b>  </a></td><td class="numi">1</td><td>1551860725861</td><td class="numi">3136</td></tr><tr class="passedodd"><td><a href="#m9"><b>searchclick</b>  </a></td><td class="numi">1</td><td>1551860736661</td><td class="numi">71</td></tr><tr class="passedodd"><td><a href="#m10"><b>signinclicklink</b>  </a></td><td class="numi">1</td><td>1551860744795</td><td class="numi">1775</td></tr><tr class="passedodd"><td><a href="#m11"><b>signupclicklink</b>  </a></td><td class="numi">1</td><td>1551860754274</td><td class="numi">2556</td></tr><tr class="passedodd"><td><a href="#m12"><b>stations</b>  </a></td><td class="numi">1</td><td>1551860764617</td><td class="numi">4240</td></tr><tr class="passedodd"><td><a href="#m13"><b>weatherClick</b>  </a></td><td class="numi">1</td><td>1551860776402</td><td class="numi">1022</td></tr><tr class="passedodd"><td><a href="#m14"><b>widget</b>  </a></td><td class="numi">1</td><td>1551860785004</td><td class="numi">20868</td></tr>
+<tr class="passedeven"><td rowspan="2">com.openweathermap.testcases.SearchTest</td><td><a href="#m15"><b>entercityname</b>  </a></td><td class="numi">1</td><td>1551860813736</td><td class="numi">4097</td></tr><tr class="passedeven"><td><a href="#m16"><b>invalidcitysearch</b>  </a></td><td class="numi">1</td><td>1551860827959</td><td class="numi">3637</td></tr>
+</table>
+<h1>SearchTest</h1>
+<h2 id="m1">com.openweathermap.testcases.HomePageTest:api</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">com.openweathermap.testcases.HomePageTest:blog</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">com.openweathermap.testcases.HomePageTest:homepageTitleTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">com.openweathermap.testcases.HomePageTest:homepagelogoTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">com.openweathermap.testcases.HomePageTest:searchclick</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">com.openweathermap.testcases.HomePageTest:signinclicklink</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">com.openweathermap.testcases.HomePageTest:price</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">com.openweathermap.testcases.HomePageTest:partners</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">com.openweathermap.testcases.SearchTest:invalidcitysearch</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">com.openweathermap.testcases.HomePageTest:signupclicklink</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m11">com.openweathermap.testcases.HomePageTest:Mapsclick</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m12">com.openweathermap.testcases.HomePageTest:weatherClick</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m13">com.openweathermap.testcases.HomePageTest:widget</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m14">com.openweathermap.testcases.HomePageTest:guide</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m15">com.openweathermap.testcases.SearchTest:entercityname</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m16">com.openweathermap.testcases.HomePageTest:stations</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

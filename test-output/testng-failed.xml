@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [openweathermap]">
+  <test name="SearchTest(failed)">
+    <classes>
+      <class name="com.openweathermap.testcases.SearchTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.openweathermap.testcases.SearchTest -->
+      <class name="com.openweathermap.testcases.HomePageTest">
+        <methods>
+          <include name="price"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.openweathermap.testcases.HomePageTest -->
+    </classes>
+  </test> <!-- SearchTest(failed) -->
+</suite> <!-- Failed suite [openweathermap] -->
