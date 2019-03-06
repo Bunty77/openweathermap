@@ -22,7 +22,7 @@ execute the command docker-compose up -d
 
 it will downlaod all the necessary file and open localhost:80 it will open the jenkins 
 
-now you have to login use below details for login
+now you have to login with below details 
 
 JENKINS_USERNAME: user
 JENKINS_PASSWORD: bitnami
