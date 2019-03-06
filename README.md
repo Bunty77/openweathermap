@@ -22,6 +22,11 @@ execute the command docker-compose up -d
 
 it will downlaod all the necessary file and open localhost:80 it will open the jenkins 
 
-now you have to login and create a job and it will be setup
+now you have to login use below details for login
+
+JENKINS_USERNAME: Jenkins admin username. Default: user
+JENKINS_PASSWORD: Jenkins admin password. Default: bitnami
+
+create a job and map with git and run the build.
 
 
