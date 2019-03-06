@@ -49,7 +49,7 @@ public class TestBase
 		else if(browserName.equals("FF")){
 			System.setProperty("webdriver.gecko.driver", "geckodriver");	
 			driver = new FirefoxDriver(); 
-			System.out.println("Browser Launch Successfully");
+			
 		}
 
 		driver.manage().window().fullscreen();
@@ -58,7 +58,7 @@ public class TestBase
 		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
 		
 		driver.get(prop.getProperty("url"));
-		System.out.println("Url Entered Successfully");
+		
 }
 	
 	
