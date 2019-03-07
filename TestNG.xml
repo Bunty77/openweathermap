@@ -3,7 +3,7 @@
 <suite name = "openweathermap">
  <test name = "SearchTest">
       <classes>
-         <class name = "com.openweathermap.testcases.HomePageTest" />
+         
          <class name = "com.openweathermap.testcases.SearchTest" />
           </classes>
    </test>
