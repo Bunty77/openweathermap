@@ -23,7 +23,6 @@ public class Search extends TestBase
 	
 	public Search() 
 	{
-		
 		PageFactory.initElements(driver, this);
 	}
 	

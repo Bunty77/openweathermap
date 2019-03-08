@@ -108,7 +108,7 @@ public class HomePageTest extends TestBase
 	{
 		homepage.api();
 		String apiurl = api.validateApi();
-		System.out.println("Current url:"+apiurl);
+		System.out.println("Current url:"+apiurl);  
 		Assert.assertEquals(apiurl, "https://openweathermap.org/api");
 	}
 	
