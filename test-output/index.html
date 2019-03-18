@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-openweathermap" class="navigator-link">
-              <span class="suite-name border-passed">openweathermap</span>
+              <span class="suite-name border-failed">openweathermap</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -90,7 +90,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">16 methods,   16 passed</span>
+                    <span class="method-stats">16 methods, 1 failed,   15 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-openweathermap" class="hide-methods failed suite-openweathermap"> (hide)</a> <!-- hide-methods failed suite-openweathermap -->
+                      <a href="#" panel-name="suite-openweathermap" class="show-methods failed suite-openweathermap"> (show)</a> <!-- show-methods failed suite-openweathermap -->
+                    </span>
+                    <div class="method-list-content failed suite-openweathermap">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-openweathermap" title="com.openweathermap.testcases.HomePageTest" class="method navigator-link" hash-for-method="price">price</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-openweathermap -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -146,11 +160,6 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-openweathermap" title="com.openweathermap.testcases.HomePageTest" class="method navigator-link" hash-for-method="price">price</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-openweathermap" title="com.openweathermap.testcases.HomePageTest" class="method navigator-link" hash-for-method="searchclick">searchclick</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -191,6 +200,101 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-openweathermap" class="panel openweathermap">
+          <div class="suite-openweathermap-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.openweathermap.testcases.HomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="price">
+                  </a> <!-- price -->
+                  <span class="method-name">price</span>
+                  <div class="stack-trace"><b>"org.openqa.selenium.TimeoutException: timeout
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.12.6 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;mlinpu1502-0035.springernature.com&apos;, ip: &apos;fe80:0:0:0:c4d:ba44:e1ba:724d%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591059 (a3d9684d10d61a..., userDataDir: /var/folders/nv/95fh8nv97rl...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:59192}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 83b11ee60c45b1ec6353c5706d228064
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at com.openweathermap.pages.HomePage.price(HomePage.java:125)
+	at com.openweathermap.testcases.HomePageTest.price(HomePageTest.java:118)
+... Removed 32 stack frames<br/> org.openqa.selenium.TimeoutException: timeout
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.12.6 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;mlinpu1502-0035.springernature.com&apos;, ip: &apos;fe80:0:0:0:c4d:ba44:e1ba:724d%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591059 (a3d9684d10d61a..., userDataDir: /var/folders/nv/95fh8nv97rl...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:59192}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 83b11ee60c45b1ec6353c5706d228064
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at com.openweathermap.pages.HomePage.price(HomePage.java:125)
+	at com.openweathermap.testcases.HomePageTest.price(HomePageTest.java:118)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+"</b><br>java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br>java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br>java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br>java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)<br>org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)<br>org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)<br>org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)<br>org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)<br>org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)<br>org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br>org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br>org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)<br>org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)<br>org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.base/java.lang.reflect.Method.invoke(Method.java:566)<br>org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)<br>com.sun.proxy.$Proxy12.click(Unknown Source)<br>com.openweathermap.pages.HomePage.price(HomePage.java:125)<br>com.openweathermap.testcases.HomePageTest.price(HomePageTest.java:118)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.base/java.lang.reflect.Method.invoke(Method.java:566)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br>org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br>org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-openweathermap-class-failed -->
           <div class="suite-openweathermap-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -266,13 +370,6 @@
                   <a name="partners">
                   </a> <!-- partners -->
                   <span class="method-name">partners</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="price">
-                  </a> <!-- price -->
-                  <span class="method-name">price</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -374,74 +471,74 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(16);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'invalidcitysearch')
-data.setCell(0, 2, 'com.openweathermap.testcases.SearchTest')
-data.setCell(0, 3, 3235);
+data.setCell(0, 1, 'price')
+data.setCell(0, 2, 'com.openweathermap.testcases.HomePageTest')
+data.setCell(0, 3, 40111);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'price')
+data.setCell(1, 1, 'Mapsclick')
 data.setCell(1, 2, 'com.openweathermap.testcases.HomePageTest')
-data.setCell(1, 3, 3231);
+data.setCell(1, 3, 8840);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'weatherClick')
+data.setCell(2, 1, 'stations')
 data.setCell(2, 2, 'com.openweathermap.testcases.HomePageTest')
-data.setCell(2, 3, 3218);
+data.setCell(2, 3, 3263);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'stations')
-data.setCell(3, 2, 'com.openweathermap.testcases.HomePageTest')
-data.setCell(3, 3, 3049);
+data.setCell(3, 1, 'entercityname')
+data.setCell(3, 2, 'com.openweathermap.testcases.SearchTest')
+data.setCell(3, 3, 3192);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'entercityname')
-data.setCell(4, 2, 'com.openweathermap.testcases.SearchTest')
-data.setCell(4, 3, 3010);
+data.setCell(4, 1, 'signupclicklink')
+data.setCell(4, 2, 'com.openweathermap.testcases.HomePageTest')
+data.setCell(4, 3, 3055);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'partners')
 data.setCell(5, 2, 'com.openweathermap.testcases.HomePageTest')
-data.setCell(5, 3, 2865);
+data.setCell(5, 3, 2978);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'guide')
-data.setCell(6, 2, 'com.openweathermap.testcases.HomePageTest')
-data.setCell(6, 3, 2802);
+data.setCell(6, 1, 'invalidcitysearch')
+data.setCell(6, 2, 'com.openweathermap.testcases.SearchTest')
+data.setCell(6, 3, 2784);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'widget')
+data.setCell(7, 1, 'api')
 data.setCell(7, 2, 'com.openweathermap.testcases.HomePageTest')
-data.setCell(7, 3, 2390);
+data.setCell(7, 3, 2692);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'signupclicklink')
+data.setCell(8, 1, 'guide')
 data.setCell(8, 2, 'com.openweathermap.testcases.HomePageTest')
-data.setCell(8, 3, 2388);
+data.setCell(8, 3, 2474);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'Mapsclick')
+data.setCell(9, 1, 'widget')
 data.setCell(9, 2, 'com.openweathermap.testcases.HomePageTest')
-data.setCell(9, 3, 2218);
+data.setCell(9, 3, 2354);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'api')
+data.setCell(10, 1, 'weatherClick')
 data.setCell(10, 2, 'com.openweathermap.testcases.HomePageTest')
-data.setCell(10, 3, 2039);
+data.setCell(10, 3, 1653);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'signinclicklink')
 data.setCell(11, 2, 'com.openweathermap.testcases.HomePageTest')
-data.setCell(11, 3, 1786);
+data.setCell(11, 3, 1634);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'searchclick')
+data.setCell(12, 1, 'blog')
 data.setCell(12, 2, 'com.openweathermap.testcases.HomePageTest')
-data.setCell(12, 3, 209);
+data.setCell(12, 3, 141);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'blog')
+data.setCell(13, 1, 'searchclick')
 data.setCell(13, 2, 'com.openweathermap.testcases.HomePageTest')
-data.setCell(13, 3, 151);
+data.setCell(13, 3, 76);
 data.setCell(14, 0, 14)
 data.setCell(14, 1, 'homepagelogoTest')
 data.setCell(14, 2, 'com.openweathermap.testcases.HomePageTest')
-data.setCell(14, 3, 26);
+data.setCell(14, 3, 31);
 data.setCell(15, 0, 15)
 data.setCell(15, 1, 'homepageTitleTest')
 data.setCell(15, 2, 'com.openweathermap.testcases.HomePageTest')
-data.setCell(15, 3, 11);
+data.setCell(15, 3, 14);
 window.suiteTableData['openweathermap']= { tableData: data, tableDiv: 'times-div-openweathermap'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 32 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-openweathermap">
               </div> <!-- times-div-openweathermap -->
             </div> <!-- times-div -->
@@ -474,194 +571,196 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">Mapsclick</span>
-                <span class="method-start">7423 ms</span>
+                <span class="method-start">10168 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">9642 ms</span>
+                <span class="method-start">19014 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">9723 ms</span>
+                <span class="method-start">19098 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">api</span>
-                <span class="method-start">19115 ms</span>
+                <span class="method-start">28647 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">21155 ms</span>
+                <span class="method-start">31340 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">21236 ms</span>
+                <span class="method-start">31414 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">blog</span>
-                <span class="method-start">31032 ms</span>
+                <span class="method-start">40642 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">31185 ms</span>
+                <span class="method-start">40784 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">31327 ms</span>
+                <span class="method-start">40910 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">guide</span>
-                <span class="method-start">39606 ms</span>
+                <span class="method-start">49280 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">42409 ms</span>
+                <span class="method-start">51755 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">42485 ms</span>
+                <span class="method-start">51835 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">homepageTitleTest</span>
-                <span class="method-start">54326 ms</span>
+                <span class="method-start">60258 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">54338 ms</span>
+                <span class="method-start">60272 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">54415 ms</span>
+                <span class="method-start">60349 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">homepagelogoTest</span>
-                <span class="method-start">64288 ms</span>
+                <span class="method-start">68772 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">64316 ms</span>
+                <span class="method-start">68804 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">64393 ms</span>
+                <span class="method-start">68880 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">partners</span>
-                <span class="method-start">72665 ms</span>
+                <span class="method-start">78011 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">75531 ms</span>
+                <span class="method-start">80990 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">75608 ms</span>
+                <span class="method-start">81070 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">price</span>
-                <span class="method-start">88252 ms</span>
+                <span class="method-start">90180 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">91484 ms</span>
+                <span class="method-start">130294 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">91561 ms</span>
+                <span class="method-start">130372 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">searchclick</span>
-                <span class="method-start">101008 ms</span>
+                <span class="method-start">138588 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">101218 ms</span>
+                <span class="method-start">138664 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">101297 ms</span>
+                <span class="method-start">138744 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">signinclicklink</span>
-                <span class="method-start">110314 ms</span>
+                <span class="method-start">147137 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">112101 ms</span>
+                <span class="method-start">148772 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">112179 ms</span>
+                <span class="method-start">148850 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">signupclicklink</span>
-                <span class="method-start">121377 ms</span>
+                <span class="method-start">156907 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">123766 ms</span>
+                <span class="method-start">159962 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">123846 ms</span>
+                <span class="method-start">160043 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">stations</span>
-                <span class="method-start">133495 ms</span>
+                <span class="method-start">169072 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">136544 ms</span>
+                <span class="method-start">172336 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">136624 ms</span>
+                <span class="method-start">172414 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">weatherClick</span>
-                <span class="method-start">144771 ms</span>
+                <span class="method-start">180898 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">147990 ms</span>
+                <span class="method-start">182552 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">148068 ms</span>
+                <span class="method-start">182631 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">widget</span>
-                <span class="method-start">159697 ms</span>
+                <span class="method-start">191236 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">162088 ms</span>
+                <span class="method-start">193591 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.openweathermap.testcases.SearchTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">162168 ms</span>
+                <span class="method-start">193674 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">entercityname</span>
-                <span class="method-start">170973 ms</span>
+                <span class="method-start">202675 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">173984 ms</span>
+                <span class="method-start">205868 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">174063 ms</span>
+                <span class="method-start">205951 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">invalidcitysearch</span>
-                <span class="method-start">190797 ms</span>
+                <span class="method-start">214675 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">194033 ms</span>
+                <span class="method-start">217459 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
