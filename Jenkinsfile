@@ -19,6 +19,8 @@ node('master') {
         stage 'Test'
         sh 'mvn test'
 
+		stage 'Archive Artifacts'
+        archiveArtifacts artifacts: 'target\\*.jar'
 
        
               
