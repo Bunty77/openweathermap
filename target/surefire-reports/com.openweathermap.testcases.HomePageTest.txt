@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.openweathermap.testcases.HomePageTest
+-------------------------------------------------------------------------------
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 86.525 s - in com.openweathermap.testcases.HomePageTest

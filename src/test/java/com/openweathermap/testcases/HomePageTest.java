@@ -14,6 +14,10 @@ import com.openweathermap.pages.SignIn;
 import com.openweathermap.pages.SignUp;
 import com.openweathermap.pages.Stations;
 
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Story;
+
 public class HomePageTest extends TestBase 
 {
 	HomePage homepage;
@@ -41,29 +45,40 @@ public class HomePageTest extends TestBase
 		  stations = new Stations();
 	}
 	
-	@Test
+	@Test(priority=1,description="Verify Title of OpenWeatherMap Site")
+	@Severity(SeverityLevel.NORMAL)
+	@Story("NEMO-1234- Verify Page Title is correct or Not")
+	
 	public void homepageTitleTest()
 	{
 		String title = homepage.validateHomePageTitle();
-		Assert.assertEquals(title, "Сurrent weather and forecast - OpenWeatherMap");		
+		Assert.assertEquals(title, "Сurrent weather and forecast - OpenWeatherMap");
+		
+		
 	}
 	
 	
-	@Test
+	@Test(priority=2,description="Verify Website Logo is Correct")
+	@Severity(SeverityLevel.BLOCKER)
+	@Story("NEMO-1434- Verify Website Logo is Correct")
 	public void homepagelogoTest()
 	{
 		boolean title = homepage.ValidateLogo();
 		Assert.assertTrue(title);	
 	}
 	
-	@Test
+	@Test(priority=3,description="Click on Weather in your City Linkt")
+	@Severity(SeverityLevel.NORMAL)
+	@Story("NEMO-1434- Click on Weather in your City Link")
 	public void searchclick()
 	{
 		homepage.weatherinyourCity();
 			
 	}
 	
-	@Test
+	@Test(priority=4,description="Verify Signin url is returning correct Response")
+	@Severity(SeverityLevel.CRITICAL)
+	@Story("NEMO-3434- Verify Signin url is returning correct Response")
 	public void signinclicklink()
 	{
 		homepage.signInClick();
@@ -72,7 +87,9 @@ public class HomePageTest extends TestBase
 		Assert.assertEquals(signinurl, "https://home.openweathermap.org/users/sign_in");
 	}
 	
-	@Test
+	@Test(priority=5,description="Verify SignUP url is returning correct Response")
+	@Severity(SeverityLevel.CRITICAL)
+	@Story("NEMO-3434- Verify SignUP url is returning correct Response")
 	public void signupclicklink()
 	{
 		homepage.signupClick();

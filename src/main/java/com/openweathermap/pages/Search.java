@@ -6,6 +6,8 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.openweathermap.base.TestBase;
 
+import io.qameta.allure.Step;
+
 public class Search extends TestBase
 {
 
@@ -29,6 +31,8 @@ public class Search extends TestBase
 	String cityname = prop.getProperty("city");
 	String invalidcity = prop.getProperty("invalidcity");
 	
+	
+	@Step("Enter City Name Steps")
 	public void entercitysearch() throws InterruptedException
 	{
 		
@@ -37,24 +41,27 @@ public class Search extends TestBase
 		
 	}
 	
-	
+	@Step("Enter Invalid Cityname Steps")
 	public void invalidSearch() throws InterruptedException
 	{
 		city.sendKeys(invalidcity);
 		
 	}
 	
+	@Step("Click on SearchLink Steps")
 	public void clickSearch()
 	{
 		search.click();
 	}
 	
+	@Step("Validate Search Result Steps")
 	public String validsearchresult()
 	{
 		System.out.println("Valid:"+validsearch.getText());
 		return validsearch.getText();
 	}
 	
+	@Step("Validate invalid Search Result Steps")
 	public String invalidsearchresult()
 	{
 		System.out.println("Invalid:"+invalidsearch.getText());
