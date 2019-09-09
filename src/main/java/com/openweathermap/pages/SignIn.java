@@ -5,6 +5,8 @@ import org.openqa.selenium.support.FindBy;
 
 import com.openweathermap.base.TestBase;
 
+import io.qameta.allure.Step;
+
 public class SignIn extends TestBase
 {
 
@@ -12,7 +14,7 @@ public class SignIn extends TestBase
 	WebElement Signin;
 	
 	
-	
+	@Step("Validate Signin Steps")
 	public String validateSignin()
 	{
 		

@@ -1,4 +1,4 @@
-package com.openweathermap.base;
+  package com.openweathermap.base;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -9,6 +9,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import com.openweathermap.utils.TestUtil;
@@ -42,8 +43,13 @@ public class TestBase
 		String browserName = prop.getProperty("browser");
 		
 		if(browserName.equals("chrome")){
-			System.setProperty("webdriver.chrome.driver", "chromedriver");	
-			driver = new ChromeDriver(); 
+			System.setProperty("webdriver.chrome.driver", "chromedriver");
+			
+			ChromeOptions chromeOptions = new ChromeOptions();
+		    chromeOptions.addArguments("--headless");
+			
+			
+			driver = new ChromeDriver(chromeOptions); 
 			System.out.println("Browser Launch Successfully");
 		}
 		else if(browserName.equals("FF")){

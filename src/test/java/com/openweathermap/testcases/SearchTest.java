@@ -1,4 +1,4 @@
-package com.openweathermap.testcases;
+/* package com.openweathermap.testcases;
 
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -61,3 +61,4 @@ public class SearchTest extends TestBase
 	}
 
 }
+*/

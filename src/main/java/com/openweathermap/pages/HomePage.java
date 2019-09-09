@@ -6,6 +6,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import com.openweathermap.base.TestBase;
 
+import io.qameta.allure.Step;
+
 public class HomePage extends TestBase
 {
 	//Page Factory 
@@ -65,7 +67,7 @@ public class HomePage extends TestBase
 	}
 	
 	//Actions:
-	
+	@Step("Verify Title of the Page Steps")
 	public String validateHomePageTitle()
 	{
 		System.out.println("Navnath Sujgure:"+driver.getTitle());
@@ -73,7 +75,7 @@ public class HomePage extends TestBase
 		
 	}
 	
-	
+	@Step("Verify Logo of the Page Steps")
 	public boolean ValidateLogo()
 	{
 		return driver.findElement(By.cssSelector("img.img-responsive")).isDisplayed();
@@ -81,32 +83,32 @@ public class HomePage extends TestBase
 	}
 	
 	
-	
+	@Step("Click on Weather in your city Link  Steps")
 	public void weatherinyourCity()
 	{
 		weatherinyourCity.click();
 		 
 		
 	}
-	
+	@Step("Click on SignIn Steps")
 	public void signInClick()
 	{
 		signInClick.click();
 		
 	}
-	
+	@Step("Click on Signup Steps")
 	public void signupClick()
 	{
 		signupClick.click();
 	}
 	
-	
+	@Step("Click on Weather Steps")
 	public void WeatherClick()
 	{
 		WeatherClick.click();
 		
 	}
-	
+	@Step("Click on Maps Steps")
 	public void mapsClick() throws InterruptedException
 	{
 		Maps.click();
@@ -114,41 +116,46 @@ public class HomePage extends TestBase
 		currentsatellitemaps.click();
 	}
 	
+	@Step("Click on Guide Steps")
 	public void guide()
 	{
 		guide.click();
 		
 	}
 	
+	@Step("Click on Price Steps")
 	public void price()
 	{
 		price.click();
 		
 	}
 	
+	@Step("Click on API Steps")
 	public void api()
 	{
 		api.click();
 		
 	}
 	
+	@Step("Click on Partners Steps")
 	public void partners()
 	{
 		partners.click();
 		
 	}
-	
+	@Step("Click on Station Steps")
 	public void stations()
 	{
 		stations.click();
 		
 	}
+	@Step("Click on Widgets Steps")
 	public void widgets()
 	{
 		widgetsconstructo.click();
 		
 	}
-	
+	@Step("Click on Blog Steps")
 	public void blog()
 	{
 		blog.click();

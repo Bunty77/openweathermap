@@ -11,7 +11,7 @@
       </class> <!-- com.openweathermap.testcases.SearchTest -->
       <class name="com.openweathermap.testcases.HomePageTest">
         <methods>
-          <include name="widget"/>
+          <include name="price"/>
           <include name="tearDown"/>
           <include name="setup"/>
         </methods>
