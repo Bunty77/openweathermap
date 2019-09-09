@@ -1,0 +1,9 @@
+com/openweathermap/pages/Stations.class
+com/openweathermap/pages/Search.class
+com/openweathermap/utils/TestUtil.class
+com/openweathermap/base/TestBase.class
+com/openweathermap/pages/SignUp.class
+com/openweathermap/pages/API.class
+com/openweathermap/pages/Price.class
+com/openweathermap/pages/SignIn.class
+com/openweathermap/pages/HomePage.class

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="16" passed="16" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2019-06-12T09:37:02Z" name="Command line suite" finished-at="2019-06-12T09:39:38Z" duration-ms="155975">
+    <groups>
+    </groups>
+    <test started-at="2019-06-12T09:37:02Z" name="Command line test" finished-at="2019-06-12T09:39:38Z" duration-ms="155975">
+      <class name="com.openweathermap.testcases.HomePageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.openweathermap.testcases.HomePageTest@ec756bd]" started-at="2019-06-12T15:07:02Z" name="setup" finished-at="2019-06-12T15:07:12Z" duration-ms="10359" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Mapsclick()[pri:0, instance:com.openweathermap.testcases.HomePageTest@ec756bd]" started-at="2019-06-12T15:07:12Z" name="Mapsclick" finished-at="2019-06-12T15:07:14Z" duration-ms="2185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Mapsclick -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.openweathermap.testcases.HomePageTest@ec756bd]" started-at="2019-06-12T15:07:14Z" name="tearDown" finished-at="2019-06-12T15:07:14Z" duration-ms="80" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.openweathermap.testcases.HomePageTest@ec756bd]" started-at="2019-06-12T15:07:14Z" name="setup" finished-at="2019-06-12T15:07:22Z" duration-ms="7853" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="api()[pri:0, instance:com.openweathermap.testcases.HomePageTest@ec756bd]" started-at="2019-06-12T15:07:22Z" name="api" finished-at="2019-06-12T15:07:26Z" duration-ms="3613" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- api -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.openweathermap.testcases.HomePageTest@ec756bd]" started-at="2019-06-12T15:07:26Z" name="tearDown" finished-at="2019-06-12T15:07:26Z" duration-ms="77" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.openweathermap.testcases.HomePageTest@ec756bd]" started-at="2019-06-12T15:07:26Z" name="setup" finished-at="2019-06-12T15:07:32Z" duration-ms="6247" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="blog()[pri:0, instance:com.openweathermap.testcases.HomePageTest@ec756bd]" started-at="2019-06-12T15:07:32Z" name="blog" finished-at="2019-06-12T15:07:33Z" duration-ms="355" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- blog -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.openweathermap.testcases.HomePageTest@ec756bd]" started-at="2019-06-12T15:07:33Z" name="tearDown" finished-at="2019-06-12T15:07:33Z" duration-ms="81" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.openweathermap.testcases.HomePageTest@ec756bd]" started-at="2019-06-12T15:07:33Z" name="setup" finished-at="2019-06-12T15:07:39Z" duration-ms="6217" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="guide()[pri:0, instance:com.openweathermap.testcases.HomePageTest@ec756bd]" started-at="2019-06-12T15:07:39Z" name="guide" finished-at="2019-06-12T15:07:42Z" duration-ms="2691" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- guide -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.openweathermap.testcases.HomePageTest@ec756bd]" started-at="2019-06-12T15:07:42Z" name="tearDown" finished-at="2019-06-12T15:07:42Z" duration-ms="82" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.openweathermap.testcases.HomePageTest@ec756bd]" started-at="2019-06-12T15:07:42Z" name="setup" finished-at="2019-06-12T15:07:50Z" duration-ms="8661" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="homepageTitleTest()[pri:0, instance:com.openweathermap.testcases.HomePageTest@ec756bd]" started-at="2019-06-12T15:07:50Z" name="homepageTitleTest" finished-at="2019-06-12T15:07:50Z" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homepageTitleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.openweathermap.testcases.HomePageTest@ec756bd]" started-at="2019-06-12T15:07:50Z" name="tearDown" finished-at="2019-06-12T15:07:50Z" duration-ms="78" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.openweathermap.testcases.HomePageTest@ec756bd]" started-at="2019-06-12T15:07:50Z" name="setup" finished-at="2019-06-12T15:07:58Z" duration-ms="7570" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="homepagelogoTest()[pri:0, instance:com.openweathermap.testcases.HomePageTest@ec756bd]" started-at="2019-06-12T15:07:58Z" name="homepagelogoTest" finished-at="2019-06-12T15:07:58Z" duration-ms="32" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homepagelogoTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.openweathermap.testcases.HomePageTest@ec756bd]" started-at="2019-06-12T15:07:58Z" name="tearDown" finished-at="2019-06-12T15:07:58Z" duration-ms="78" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.openweathermap.testcases.HomePageTest@ec756bd]" started-at="2019-06-12T15:07:58Z" name="setup" finished-at="2019-06-12T15:08:08Z" duration-ms="10024" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="partners()[pri:0, instance:com.openweathermap.testcases.HomePageTest@ec756bd]" started-at="2019-06-12T15:08:08Z" name="partners" finished-at="2019-06-12T15:08:12Z" duration-ms="4189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- partners -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.openweathermap.testcases.HomePageTest@ec756bd]" started-at="2019-06-12T15:08:12Z" name="tearDown" finished-at="2019-06-12T15:08:12Z" duration-ms="79" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.openweathermap.testcases.HomePageTest@ec756bd]" started-at="2019-06-12T15:08:12Z" name="setup" finished-at="2019-06-12T15:08:23Z" duration-ms="10591" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="price()[pri:0, instance:com.openweathermap.testcases.HomePageTest@ec756bd]" started-at="2019-06-12T15:08:23Z" name="price" finished-at="2019-06-12T15:08:25Z" duration-ms="2520" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- price -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.openweathermap.testcases.HomePageTest@ec756bd]" started-at="2019-06-12T15:08:25Z" name="tearDown" finished-at="2019-06-12T15:08:26Z" duration-ms="81" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.openweathermap.testcases.HomePageTest@ec756bd]" started-at="2019-06-12T15:08:26Z" name="setup" finished-at="2019-06-12T15:08:33Z" duration-ms="7858" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="searchclick()[pri:0, instance:com.openweathermap.testcases.HomePageTest@ec756bd]" started-at="2019-06-12T15:08:33Z" name="searchclick" finished-at="2019-06-12T15:08:34Z" duration-ms="221" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchclick -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.openweathermap.testcases.HomePageTest@ec756bd]" started-at="2019-06-12T15:08:34Z" name="tearDown" finished-at="2019-06-12T15:08:34Z" duration-ms="77" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.openweathermap.testcases.HomePageTest@ec756bd]" started-at="2019-06-12T15:08:34Z" name="setup" finished-at="2019-06-12T15:08:42Z" duration-ms="7908" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="signinclicklink()[pri:0, instance:com.openweathermap.testcases.HomePageTest@ec756bd]" started-at="2019-06-12T15:08:42Z" name="signinclicklink" finished-at="2019-06-12T15:08:43Z" duration-ms="1696" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signinclicklink -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.openweathermap.testcases.HomePageTest@ec756bd]" started-at="2019-06-12T15:08:43Z" name="tearDown" finished-at="2019-06-12T15:08:43Z" duration-ms="80" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.openweathermap.testcases.HomePageTest@ec756bd]" started-at="2019-06-12T15:08:43Z" name="setup" finished-at="2019-06-12T15:08:53Z" duration-ms="9505" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="signupclicklink()[pri:0, instance:com.openweathermap.testcases.HomePageTest@ec756bd]" started-at="2019-06-12T15:08:53Z" name="signupclicklink" finished-at="2019-06-12T15:08:55Z" duration-ms="2223" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signupclicklink -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.openweathermap.testcases.HomePageTest@ec756bd]" started-at="2019-06-12T15:08:55Z" name="tearDown" finished-at="2019-06-12T15:08:55Z" duration-ms="79" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.openweathermap.testcases.HomePageTest@ec756bd]" started-at="2019-06-12T15:08:55Z" name="setup" finished-at="2019-06-12T15:09:01Z" duration-ms="6287" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="stations()[pri:0, instance:com.openweathermap.testcases.HomePageTest@ec756bd]" started-at="2019-06-12T15:09:01Z" name="stations" finished-at="2019-06-12T15:09:02Z" duration-ms="863" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stations -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.openweathermap.testcases.HomePageTest@ec756bd]" started-at="2019-06-12T15:09:02Z" name="tearDown" finished-at="2019-06-12T15:09:02Z" duration-ms="78" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.openweathermap.testcases.HomePageTest@ec756bd]" started-at="2019-06-12T15:09:02Z" name="setup" finished-at="2019-06-12T15:09:08Z" duration-ms="5933" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="weatherClick()[pri:0, instance:com.openweathermap.testcases.HomePageTest@ec756bd]" started-at="2019-06-12T15:09:08Z" name="weatherClick" finished-at="2019-06-12T15:09:09Z" duration-ms="1040" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- weatherClick -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.openweathermap.testcases.HomePageTest@ec756bd]" started-at="2019-06-12T15:09:09Z" name="tearDown" finished-at="2019-06-12T15:09:09Z" duration-ms="79" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.openweathermap.testcases.HomePageTest@ec756bd]" started-at="2019-06-12T15:09:09Z" name="setup" finished-at="2019-06-12T15:09:16Z" duration-ms="6890" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="widget()[pri:0, instance:com.openweathermap.testcases.HomePageTest@ec756bd]" started-at="2019-06-12T15:09:16Z" name="widget" finished-at="2019-06-12T15:09:20Z" duration-ms="4074" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- widget -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.openweathermap.testcases.HomePageTest@ec756bd]" started-at="2019-06-12T15:09:20Z" name="tearDown" finished-at="2019-06-12T15:09:21Z" duration-ms="83" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.openweathermap.testcases.HomePageTest -->
+      <class name="com.openweathermap.testcases.SearchTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.openweathermap.testcases.SearchTest@147ed70f]" started-at="2019-06-12T15:09:21Z" name="setup" finished-at="2019-06-12T15:09:27Z" duration-ms="6053" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="entercityname()[pri:0, instance:com.openweathermap.testcases.SearchTest@147ed70f]" started-at="2019-06-12T15:09:27Z" name="entercityname" finished-at="2019-06-12T15:09:29Z" duration-ms="2182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- entercityname -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.openweathermap.testcases.SearchTest@147ed70f]" started-at="2019-06-12T15:09:29Z" name="tearDown" finished-at="2019-06-12T15:09:29Z" duration-ms="79" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.openweathermap.testcases.SearchTest@147ed70f]" started-at="2019-06-12T15:09:29Z" name="setup" finished-at="2019-06-12T15:09:35Z" duration-ms="5860" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="invalidcitysearch()[pri:0, instance:com.openweathermap.testcases.SearchTest@147ed70f]" started-at="2019-06-12T15:09:35Z" name="invalidcitysearch" finished-at="2019-06-12T15:09:38Z" duration-ms="2970" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidcitysearch -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.openweathermap.testcases.SearchTest@147ed70f]" started-at="2019-06-12T15:09:38Z" name="tearDown" finished-at="2019-06-12T15:09:38Z" duration-ms="79" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.openweathermap.testcases.SearchTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>
